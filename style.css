@@ -1,0 +1,40 @@
+body {
+    background: #3b3b3b;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 92px;
+    height: 60px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    background-color: #ff0000;
+    position: relative;
+    border-radius: 1.1rem;
+}
+.logo::before {
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    bottom: 0%;
+    left: 60%;
+    right: 50%;
+    background-color: #ff0000;
+    border: 15px solid #fff;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-width: 25px;
+}
+.text {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 400%;
+    font-size: 65px;
+    font-family: Roboto, sans-serif;
+    font-weight: 450;
+    letter-spacing: -2px;
+    color: #fff;
+}
